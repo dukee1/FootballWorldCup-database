@@ -7,7 +7,7 @@ This repository contains the PostgreSQL database dump and Bash scripts for the W
 The `worldcup` database contains 2 tables with relational links (Primary & Foreign Keys):
 
 - `teams`: Unique national teams (`team_id` SERIAL primary key, `name` VARCHAR UNIQUE).
-- `games`: Results of the final three rounds of the 2014 and 2018 World Cups (`game_id` SERIAL primary key, `year`, `round`, `winner_id` and `opponent_id` as foreign keys to `teams.team_id`, `winner_goals`, `opponent_goals`).
+- `games`: Results of the final three rounds of the 2014 and 2018 World Cups (`game_id` SERIAL primary key, `year`, `round`, `winner_id` and `opponent_id` as foreign keys to `team_id`).
 
 All columns have the `NOT NULL` constraint.
 
